@@ -1,0 +1,32 @@
+<div class="wrapper">
+	<div class="container">
+		<h1>Restaurants list</h1>
+		<div class="container-restaurants">
+				<% @restaurants.each do |restaurant| %>
+					<div class="restaurant">
+						<div class="checkbox">			
+							<h2><i class="fas fa-utensils"></i></h2>
+						</div>
+						<div class="restaurant-display">
+							<h3><%= restaurant.name %></h3>
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<%= link_to "More details", restaurant_path(restaurant) %>
+								</li>
+							</ul>
+						</div>
+					</div>
+				<% end %>
+				<%= link_to new_restaurant_path do %>
+				<div class="restaurant" id="add-a-restaurant">
+					<div class="checkbox">
+						<h2><i class="far fa-plus-square"></i></h2>
+					</div>
+					<div class="restaurant-display">
+						<h3>Add a new restaurant</h3>
+					</div>
+				</div>
+				<% end %>
+		</div>
+	</div>
+</div>

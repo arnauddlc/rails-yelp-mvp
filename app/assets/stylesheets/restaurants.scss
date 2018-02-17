@@ -1,0 +1,175 @@
+// Place all the styles related to the restaurants controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$main-color: #66B5AB;
+
+
+body {
+	font-family: 'Oxygen', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+label {
+	color: white;
+}
+
+a {
+	margin-left: 55px;
+	color: #252525;
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+h1 {
+  width: 100%;
+  margin: 0;
+  padding: 5px 55px;
+  background-color: black;
+  color: $main-color;
+  border-radius: 5px;
+}
+
+h6 {
+	font-weight: lighter;
+	margin: 15px 0;
+	padding: 0px 30px;
+	color: gray;
+}
+
+.wrapper {
+  padding: 20px;
+  width: 100%;
+  min-height: 900px;
+  background-color: $main-color;
+  display: block;
+  align-items: top;
+  justify-items: center;
+  margin: 0;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.container-restaurants {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  border-radius: 5px;
+  padding: 30px;
+  margin: 20px 0;
+}
+
+
+.restaurant {
+
+	display: flex;
+  // border-left: 10px solid $main-color;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+
+	h2 {
+		margin: 5px;
+	  font-size: 64px;
+		color: $main-color !important;
+	}
+
+  h3 {
+  	margin-top: 0;
+    font-size: 24px;
+    color: white;
+  }
+
+  p {
+    font-size: 16px;
+    color: gray;
+  }
+
+  .checkbox {
+    a {
+      color: $main-color !important;
+    }
+  	margin: 5px;
+  	padding: 10px;
+  	flex: 0 0 0;
+  }
+
+  .restaurant-display {
+  	margin: auto 5px;
+  	padding:10px;
+  	flex: 1 0 0;
+  	align: center;
+  }
+
+  .list-inline {
+  	margin-bottom: 0 !important;
+  }
+
+  &:hover{
+    background-color: #252525;
+  }
+
+  a {
+		font-style: lighter;
+		margin-left: 0px;
+		color: gray;
+		text-decoration: none;
+		&:hover {
+			text-decoration: none;
+		}
+  }
+}
+
+.form-inline {
+  margin: 15px auto;
+  display: flex;
+
+  .btn {
+    margin-left: 10px;
+    background-color: #383d41;
+    color: white;
+  }
+
+  .form-control {
+    flex: 1 0 0;
+  }
+}
+
+a{
+  text-decoration: none;
+
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+#add-a-restaurant {
+	margin-top: 5px;
+	border-top: 1px solid #252525;
+
+	p{
+		margin-bottom: 0;
+	}
+}
+
+.edit-container {
+	padding-left: 126px;
+
+	#edit-btn {
+		margin-left: 0;
+		background-color: #252525;
+		color: gray;
+		opacity: 0.8;
+		&:hover {
+			opacity: 1;
+		}
+
+
+	}
+}
